@@ -5,7 +5,7 @@ function Matris({tabloId}) {
     console.log(tabloId+"matris");
     const [matris, setMatris] = useState([]);
     useEffect(() => {
-        fetch("https://localhost:7100/spiral/GetTable?tabloId="+tabloId).then((response) => response.json()).then((data) => {
+        fetch("https://spiralinteger.azurewebsites.net/spiral/GetTable?tabloId="+tabloId).then((response) => response.json()).then((data) => {
             setMatris(data);
             console.log(data);
         },);
