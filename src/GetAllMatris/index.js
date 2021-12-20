@@ -13,7 +13,7 @@ function GetAllMatris({tabloId,setTabloId}) {
     }
 
     useEffect(() => {
-        fetch("https://spiralinteger.azurewebsites.net/spiral/GetAll").then((response) => response.json()).then((data) => {
+        fetch("https://localhost:7100/spiral/GetAll").then((response) => response.json()).then((data) => {
             setMatris(data);
             console.log(data);
         });

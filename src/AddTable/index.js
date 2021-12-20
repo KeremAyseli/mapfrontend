@@ -5,7 +5,7 @@ import { Button, Alert, InputGroup, FormControl } from 'react-bootstrap';
 
 function AddTable({MatrisX,MatrisY}) {
     const [status, setStatus] = useState(null);
-    const addNewTable = () => fetch("https://spiralinteger.azurewebsites.net/spiral/add?MatrisX="+MatrisX+"&Matrisy="+MatrisY).then((response) => setStatus(response.status));
+    const addNewTable = () => fetch("https://localhost:7100/spiral/add?MatrisX="+MatrisX+"&Matrisy="+MatrisY).then((response) => setStatus(response.status));
 
     return (
         <>
